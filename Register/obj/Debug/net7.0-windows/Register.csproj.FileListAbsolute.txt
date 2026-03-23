@@ -1,0 +1,50 @@
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\bin\Debug\net7.0-windows\Register.exe
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\bin\Debug\net7.0-windows\Register.deps.json
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\bin\Debug\net7.0-windows\Register.runtimeconfig.json
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\bin\Debug\net7.0-windows\Register.dll
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\bin\Debug\net7.0-windows\Register.pdb
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.csproj.AssemblyReference.cache
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.Reg.resources
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.csproj.GenerateResource.cache
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.GeneratedMSBuildEditorConfig.editorconfig
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.AssemblyInfoInputs.cache
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.AssemblyInfo.cs
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.csproj.CoreCompileInputs.cache
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.dll
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\refint\Register.dll
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.pdb
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\Register.genruntimeconfig.cache
+G:\1.教學\4.醫療資訊管理\Medical Information MD\期中期末以掛號系統為範例\Register\Register\obj\Debug\net7.0-windows\ref\Register.dll
+G:\1.教學\4.醫療資訊管理\Register\Register\bin\Debug\net7.0-windows\Register.exe
+G:\1.教學\4.醫療資訊管理\Register\Register\bin\Debug\net7.0-windows\Register.deps.json
+G:\1.教學\4.醫療資訊管理\Register\Register\bin\Debug\net7.0-windows\Register.runtimeconfig.json
+G:\1.教學\4.醫療資訊管理\Register\Register\bin\Debug\net7.0-windows\Register.dll
+G:\1.教學\4.醫療資訊管理\Register\Register\bin\Debug\net7.0-windows\Register.pdb
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.csproj.AssemblyReference.cache
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.Reg.resources
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.csproj.GenerateResource.cache
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.GeneratedMSBuildEditorConfig.editorconfig
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.AssemblyInfoInputs.cache
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.AssemblyInfo.cs
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.csproj.CoreCompileInputs.cache
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.dll
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\refint\Register.dll
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.pdb
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\Register.genruntimeconfig.cache
+G:\1.教學\4.醫療資訊管理\Register\Register\obj\Debug\net7.0-windows\ref\Register.dll
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\Register.Reg.resources
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\Register.csproj.GenerateResource.cache
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\Register.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\Register.AssemblyInfoInputs.cache
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\Register.AssemblyInfo.cs
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\Register.csproj.CoreCompileInputs.cache
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\Register.dll
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\refint\Register.dll
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\Register.pdb
+C:\Users\lan\Desktop\Register\Register\bin\Debug\net7.0-windows\Register.exe
+C:\Users\lan\Desktop\Register\Register\bin\Debug\net7.0-windows\Register.deps.json
+C:\Users\lan\Desktop\Register\Register\bin\Debug\net7.0-windows\Register.runtimeconfig.json
+C:\Users\lan\Desktop\Register\Register\bin\Debug\net7.0-windows\Register.dll
+C:\Users\lan\Desktop\Register\Register\bin\Debug\net7.0-windows\Register.pdb
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\Register.genruntimeconfig.cache
+C:\Users\lan\Desktop\Register\Register\obj\Debug\net7.0-windows\ref\Register.dll
