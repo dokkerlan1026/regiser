@@ -1,13 +1,13 @@
 # 憨吉聯合大醫院掛號系統 — 完整說明文件
 
 > **系統名稱**: 憨吉聯合大醫院掛號系統
-> **技術平台**: .NET 7 · Windows Forms · C# · SQLite
-> **文件版本**: v2.0.0  ·  2026-03-24
+> **技術平台**: .NET 7 · Windows Forms · C# · SQL Server
+> **文件版本**: v2.1.0  ·  2026-03-24
 
 ---
 
 ## 一、系統架構與資料庫設計
-本系統採用本地輕量級關聯式資料庫 `SQLite` (`clinic.db`) 進行資料儲存，以支援多個管理頁面。
+本系統採用微軟正統關聯式資料庫 `SQL Server` (`ClinicDB`) 進行資料儲存，完全相容於 SSMS，支援多個管理頁面與複雜掛號交易邏輯。
 
 ### 1.1 資料表結構 (共 6 個表)
 
@@ -109,9 +109,10 @@
 | A | 年齡 | TextBox (唯讀) | 系統依生日自動計算 |
 | A | 電話、地址 | TextBox/ComboBox | 聯絡方式與居住地 |
 | B | 掛號日期 | TextBox | 掛號當日日期 |
-| B | 科別 | ComboBox | 動態由 SQLite 載入 |
-| B | 時段 | ComboBox | 動態由 SQLite 載入 (上下晚上) |
+| B | 科別 | ComboBox | 動態由 SQL Server 載入 |
+| B | 時段 | ComboBox | 動態由 SQL Server 載入 (上下晚上) |
 | B | 醫師 | ComboBox | 依所選「科別」與「時段」即時連動篩選 |
+| B | 等候號碼 | TextBox (唯讀) | 系統自資料庫查詢目前進度，防呆自動 +1 |
 
 ---
 
@@ -136,8 +137,8 @@ public class Patient
 
 | 類別 / 檔案 | 職責 |
 |------------|------|
-| [DatabaseHelper.cs](file:///c:/Users/lan/Desktop/Register/Register/DatabaseHelper.cs) | 系統啟動時初始化 SQLite 六大資料庫表與填充假資料。 |
-| [Reg.cs](file:///c:/Users/lan/Desktop/Register/Register/Reg.cs) | 主系統入口，處理輸入檢查、動態連動下拉表單、生日年齡計算。 |
+| [DatabaseHelper.cs](file:///c:/Users/lan/Desktop/Register/Register/DatabaseHelper.cs) | 系統啟動時初始化 SQL Server 資料庫 `ClinicDB`，自動防呆建立六大 T-SQL 資料表與填充假資料。 |
+| [Reg.cs](file:///c:/Users/lan/Desktop/Register/Register/Reg.cs) | 主系統入口，處理輸入檢查、動態連動下拉表單、實作病患 UPSERT（依身分證確認身分，自動指派 001 流水病歷號）與等候人數連動更新。 |
 | [DoctorScheduleForm.cs](file:///c:/Users/lan/Desktop/Register/Register/DoctorScheduleForm.cs) | 行政管理頁面 1：羅列所有門診排班（唯讀）。 |
 | [PatientManagementForm.cs](file:///c:/Users/lan/Desktop/Register/Register/PatientManagementForm.cs) | 行政管理頁面 2：顯示看診病患總覽與掛號對應單。 |
 | [DepartmentManagementForm.cs](file:///c:/Users/lan/Desktop/Register/Register/DepartmentManagementForm.cs) | 行政管理頁面 3：檢閱所有科別及其 14 位專任醫師。 |
@@ -157,11 +158,18 @@ public class Patient
 掛號資訊區（組塊 B）支援智慧型連動篩選：
 1. 使用者首先於 **【科別】** (Department) 下拉選單選取欲掛入的科別 (例如：外科)。
 2. 使用者接著於 **【時段】** (TimeSlot) 下拉選單選擇時段 (例如：早上)。
-3. 系統即刻執行 SQLite 內部聯集查詢 (`JOIN DoctorSchedules`)。
+3. 系統即刻執行 SQL Server 內部聯集查詢 (`JOIN DoctorSchedules`)。
 4. 最後，**【醫師】** (Doctor) 下拉選單只會列出現有排班且符合該科別定義的醫師，免除誤選錯誤。
 
-### 4.3 管理報表的啟用
+### 4.3 新舊病患判定與自動派號機制
+系統透過按下掛號按鈕時，進行以下智慧業務邏輯 (UPSERT)：
+- **身分證為唯一識別**：輸入身分證後，系統進行資料庫配對比對。
+- **初診派發病歷號**：若為新病患，系統會查詢過去最大的病歷號，從 `001` 開始為其建立全新流水編號並寫入。
+- **複診更新資料**：依據身分證查有此人時，系統自動將畫面上新填寫的居住地、電話等資訊更新 (`UPDATE`) 進系統中，保持聯絡資料最新。
+- **等候人數防呆**：畫面上的掛號號碼框設定為唯讀，當使用者選擇醫師後，系統就自動計算這科當天已經幾號了，自動加 1 派與給該次掛號。
+
+### 4.4 管理報表的啟用
 在主畫面的上方標題列，設置了四個切換按鈕 `[科別管理]` `[排班管理]` `[病患總覽]` `[統計報表]`。點擊任一按鈕，將會跳出 Modal 視窗 (ShowDialog)。每一個管理表單內建獨立的 `DataGridView` 查詢介面，方便櫃台人員隨時進行掛號查核。
 
 ---
-*文件更新：2026-03-24  (配合 v2.0 架構大更新全面修訂)*
+*文件更新：2026-03-24  (升級為 SQL Server 架構並實裝掛號派號等業務邏輯)*
