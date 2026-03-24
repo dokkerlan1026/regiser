@@ -32,12 +32,16 @@
 | | Name | 醫師姓名 | NVARCHAR(50) | NOT NULL | 醫生全名 |
 | FK | DepartmentId | 所屬科別 | INT | REFERENCES Departments(Id)| 掛在特定的醫學科別下 |
 
+![科別醫師](科別醫師.png)
+
 #### 4. DoctorSchedules (醫師排班表)
 | 鍵值 | 欄位名稱 | 中文說明 | 型態 | 屬性 | 說明 |
 |---|---|---|---|---|---|
 | PK | Id | 排班代號 | INT | PRIMARY KEY IDENTITY(1,1) | 唯一識別碼 |
 | FK | DoctorId | 醫師代號 | INT | REFERENCES Doctors(Id) | 掛號連動篩選重點 |
 | FK | TimeSlotId | 時段代號 | INT | REFERENCES TimeSlots(Id)| 掛號連動篩選重點 |
+
+![排班](排班.png)
 
 #### 5. Patients (病患資料表)
 | 鍵值 | 欄位名稱 | 中文說明 | 型態 | 屬性 | 說明 |
@@ -51,6 +55,8 @@
 | | Phone| 聯絡電話 | NVARCHAR(50) | | 病患的手機或市話 |
 | | Address| 居住地址 | NVARCHAR(200) | | 門牌及詳細地址 |
 
+![病人資料](病人資料.png)
+
 #### 6. Registrations (掛號紀錄表)
 | 鍵值 | 欄位名稱 | 中文說明 | 型態 | 屬性 | 說明 |
 |---|---|---|---|---|---|
@@ -61,6 +67,8 @@
 | | RegDate | 掛號日期 | NVARCHAR(50) | | 申請就醫的日期 |
 | | RegNumber | 號牌號碼 | INT | | 當天掛號梯次 (如 12 號) |
 | | IsFirstTime| 初診狀態| BIT | | 1=初診, 0=複診 |
+
+![掛號人數](掛號人數.png)
 
 ### 1.2 系統操作表單 (共 5 個頁面)
 包含主畫面在內，本系統具有 5 個專門的 Windows Forms 頁面：
@@ -175,4 +183,5 @@ public class Patient
 
 ---
 *文件更新：2026-03-24  (升級為 SQL Server 架構並實裝掛號派號等業務邏輯)*
+
 
