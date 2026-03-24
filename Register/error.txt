@@ -1,0 +1,27 @@
+  正在判斷要還原的專案...
+C:\Program Files\dotnet\sdk\10.0.201\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 目標 Framework 'net7.0-windows' 已不受支援，未來將不會再收到任何安全性更新。如需支援原則的詳細資訊，請參閱 https://aka.ms/dotnet-core-support。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Program Files\dotnet\sdk\10.0.201\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 目標 Framework 'net7.0-windows' 已不受支援，未來將不會再收到任何安全性更新。如需支援原則的詳細資訊，請參閱 https://aka.ms/dotnet-core-support。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+  所有專案都在最新狀態，可進行還原。
+C:\Program Files\dotnet\sdk\10.0.201\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 目標 Framework 'net7.0-windows' 已不受支援，未來將不會再收到任何安全性更新。如需支援原則的詳細資訊，請參閱 https://aka.ms/dotnet-core-support。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\DatabaseHelper.cs(160,24): error CS0136: 無法在此範圍宣告名為 'cmd' 的區域變數或參數，因為該名稱已用於封入區域變數範圍，以定義區域變數或參數 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(81,47): warning CS8622: 'void Reg.DepartmentOrTimeSlot_Changed(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(82,45): warning CS8622: 'void Reg.DepartmentOrTimeSlot_Changed(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(83,43): warning CS8622: 'void Reg.Doctor_Changed(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(84,41): warning CS8622: 'void Reg.City_Changed(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(87,24): warning CS8622: 'void Reg.BtnCheckId_Click(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+
+建置失敗。
+
+C:\Program Files\dotnet\sdk\10.0.201\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 目標 Framework 'net7.0-windows' 已不受支援，未來將不會再收到任何安全性更新。如需支援原則的詳細資訊，請參閱 https://aka.ms/dotnet-core-support。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Program Files\dotnet\sdk\10.0.201\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 目標 Framework 'net7.0-windows' 已不受支援，未來將不會再收到任何安全性更新。如需支援原則的詳細資訊，請參閱 https://aka.ms/dotnet-core-support。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Program Files\dotnet\sdk\10.0.201\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.EolTargetFrameworks.targets(32,5): warning NETSDK1138: 目標 Framework 'net7.0-windows' 已不受支援，未來將不會再收到任何安全性更新。如需支援原則的詳細資訊，請參閱 https://aka.ms/dotnet-core-support。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(81,47): warning CS8622: 'void Reg.DepartmentOrTimeSlot_Changed(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(82,45): warning CS8622: 'void Reg.DepartmentOrTimeSlot_Changed(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(83,43): warning CS8622: 'void Reg.Doctor_Changed(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(84,41): warning CS8622: 'void Reg.City_Changed(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\Reg.cs(87,24): warning CS8622: 'void Reg.BtnCheckId_Click(object sender, EventArgs e)' 的 'sender' 參數類型中，參考型別是否可為 Null 的情況，與目標委派 'EventHandler' 不相符 (可能的原因是屬性可為 Null)。 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+C:\Users\lan\Desktop\Register\Register\DatabaseHelper.cs(160,24): error CS0136: 無法在此範圍宣告名為 'cmd' 的區域變數或參數，因為該名稱已用於封入區域變數範圍，以定義區域變數或參數 [C:\Users\lan\Desktop\Register\Register\Register.csproj]
+    8 個警告
+    1 個錯誤
+
+經過時間 00:00:00.97

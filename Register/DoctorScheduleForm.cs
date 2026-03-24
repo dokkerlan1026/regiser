@@ -1,8 +1,7 @@
-using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-using Microsoft.Data.Sqlite;
+using Microsoft.Data.SqlClient;
 
 namespace Register
 {
@@ -29,7 +28,7 @@ namespace Register
 
 		private void LoadData()
 		{
-			using (var conn = new SqliteConnection(DatabaseHelper.ConnectionString))
+			using (var conn = new SqlConnection(DatabaseHelper.ConnectionString))
 			{
 				conn.Open();
 				string query = @"

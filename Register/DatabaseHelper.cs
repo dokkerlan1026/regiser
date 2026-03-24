@@ -154,6 +154,31 @@ namespace Register
                             ";
                             ExecuteQuery(connection, insertDistricts);
                         }
+
+            // 預設病患與掛號資料
+            int patientCount = 0;
+            using (var cmdPatient = connection.CreateCommand())
+            {
+                cmdPatient.CommandText = "SELECT COUNT(*) FROM Patients";
+                patientCount = (int)cmdPatient.ExecuteScalar();
+            }
+            if (patientCount == 0)
+            {
+                var insertPatients = @"
+                    INSERT INTO Patients (MedicalRecordNo, NationalId, Name, Gender, BirthDate, Phone, Address) VALUES 
+                    (N'001', N'A123456789', N'王小明', N'1.男', N'0800101', N'0912345678', N'臺北市中正區重慶南路一段1號'),
+                    (N'002', N'B222333444', N'李美玲', N'0.女', N'0750505', N'0922888999', N'新北市板橋區文化路二段100號'),
+                    (N'003', N'C111222333', N'張三豐', N'1.男', N'0601212', N'0933555666', N'桃園市中壢區中正路200號');
+                ";
+                ExecuteQuery(connection, insertPatients);
+
+                var insertRegistrations = @"
+                    INSERT INTO Registrations (PatientId, DoctorId, TimeSlotId, RegDate, RegNumber, IsFirstTime) VALUES 
+                    (1, 1, 1, CONVERT(NVARCHAR(10), GETDATE(), 120), 1, 1),
+                    (2, 3, 2, CONVERT(NVARCHAR(10), GETDATE(), 120), 1, 1);
+                ";
+                ExecuteQuery(connection, insertRegistrations);
+            }
                     }
                 }
             }
@@ -211,7 +236,34 @@ namespace Register
                 SELECT d.Id, t.Id FROM Doctors d CROSS JOIN TimeSlots t;
             ";
             ExecuteQuery(connection, insertSchedules);
+
+            // 預設病患與掛號資料
+            int patientCount = 0;
+            using (var cmdPatient = connection.CreateCommand())
+            {
+                cmdPatient.CommandText = "SELECT COUNT(*) FROM Patients";
+                patientCount = (int)cmdPatient.ExecuteScalar();
+            }
+            if (patientCount == 0)
+            {
+                var insertPatients = @"
+                    INSERT INTO Patients (MedicalRecordNo, NationalId, Name, Gender, BirthDate, Phone, Address) VALUES 
+                    (N'001', N'A123456789', N'王小明', N'1.男', N'0800101', N'0912345678', N'臺北市中正區重慶南路一段1號'),
+                    (N'002', N'B222333444', N'李美玲', N'0.女', N'0750505', N'0922888999', N'新北市板橋區文化路二段100號'),
+                    (N'003', N'C111222333', N'張三豐', N'1.男', N'0601212', N'0933555666', N'桃園市中壢區中正路200號');
+                ";
+                ExecuteQuery(connection, insertPatients);
+
+                var insertRegistrations = @"
+                    INSERT INTO Registrations (PatientId, DoctorId, TimeSlotId, RegDate, RegNumber, IsFirstTime) VALUES 
+                    (1, 1, 1, CONVERT(NVARCHAR(10), GETDATE(), 120), 1, 1),
+                    (2, 3, 2, CONVERT(NVARCHAR(10), GETDATE(), 120), 1, 1);
+                ";
+                ExecuteQuery(connection, insertRegistrations);
+            }
         }
     }
 }
+
+
 

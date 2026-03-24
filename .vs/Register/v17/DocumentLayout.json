@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lan\\Desktop\\Register\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lan\\Desktop\\Register\\Register\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Register\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lan\\Desktop\\Register\\Register\\Reg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Register\\Reg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lan\\Desktop\\Register\\Register\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Register\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lan\\Desktop\\Register\\register\\reg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lan\\Desktop\\Register\\Register\\Program.cs",
               "RelativeDocumentMoniker": "Register\\Program.cs",
@@ -46,18 +46,17 @@
               "RelativeToolTip": "Register\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T16:29:38.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-23T16:29:38.902Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Reg.cs",
               "DocumentMoniker": "C:\\Users\\lan\\Desktop\\Register\\Register\\Reg.cs",
               "RelativeDocumentMoniker": "Register\\Reg.cs",
               "ToolTip": "C:\\Users\\lan\\Desktop\\Register\\Register\\Reg.cs",
               "RelativeToolTip": "Register\\Reg.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAQwK0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T16:27:31.619Z",
               "EditorCaption": ""

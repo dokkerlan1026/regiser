@@ -2,7 +2,7 @@ using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-using Microsoft.Data.Sqlite;
+using Microsoft.Data.SqlClient;
 
 namespace Register
 {
@@ -29,13 +29,13 @@ namespace Register
 
 		private void LoadData()
 		{
-			using (var conn = new SqliteConnection(DatabaseHelper.ConnectionString))
+			using (var conn = new SqlConnection(DatabaseHelper.ConnectionString))
 			{
 				conn.Open();
 				string query = @"
 					SELECT dept.Id AS '科別代碼', 
 						   dept.Name AS '科別名稱',
-						   GROUP_CONCAT(d.Name, ', ') AS '所屬醫師'
+						   STRING_AGG(d.Name, ', ') AS '所屬醫師'
 					FROM Departments dept
 					LEFT JOIN Doctors d ON dept.Id = d.DepartmentId
 					GROUP BY dept.Id, dept.Name
